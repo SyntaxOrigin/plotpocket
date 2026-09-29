@@ -1,0 +1,12 @@
+zaman_s,gecikme_ms,bayrak,not
+0,42.5,1,"normal okuma"
+1,44.1,1,"normal okuma"
+2,41.8,0,"hata: zaman asimi"
+3,58.3,1,"yavasliyor"
+4,"63,7",1,"ondalik ayrac yerine virgul -> metin sayilir"
+5,,1,"bos deger"
+6,72.9,1,"yildizli not: *kritik*"
+7,69.4,1,"tirnakli: ""acele et"""
+8,66.0,1,"ilk satir
+ikinci satir"
+9,71.5,1,"son satir"

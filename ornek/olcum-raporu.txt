@@ -1,0 +1,22 @@
+PlotPocket olcum raporu
+========================
+dosya        : buyuk-gecikme.csv
+boyut        : 1.340.289 bayt (1,28 MB)
+satir        : 50.000 veri + 1 baslik = 5 sutun
+tekrarlar    : 5 kosu, medyan raporlandi
+
+olcum                                     medyan ms   en hizli   en yavas  tepe RSS MB
+--------------------------------------------------------------------------------------
+plot cizgi (LTTB 2000, 80x24)                  23,2       18,9       69,9         4,36
+plot alan (LTTB 2000, 80x24)                   16,5       12,3       26,4         3,92
+plot nokta (LTTB 2000, 80x24)                  23,9       16,8       26,6         3,91
+export SVG (LTTB 2000)                         30,8       22,4       36,3         3,98
+profile (ornek 1000 kayit)                     25,3         20         27         3,86
+profile --tam (tam sayim)                      23,5       10,4       25,8         3,88
+histogram (kova 60)                              13       11,3       22,8         3,91
+kutu (bes sayili ozet)                         14,7       13,7       22,5         3,91
+
+Not: RSS olcumu 5 ms ornekleme ile alinir; ~50 ms sureli kosularda
+ornek sayisi sinirlidir, bu yuzden degerler alt sinir olabilir.
+Rapordaki butun sayilar bu makinede (Windows, MinGW-w64 gcc 16.2.0,
+rustc 1.98.1) gercek olarak olculmustur.

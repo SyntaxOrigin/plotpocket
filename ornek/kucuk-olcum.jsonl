@@ -1,0 +1,6 @@
+{"zaman_s": 0, "gecikme_ms": 42.5, "bolge": "tr-1", "durum": "ok"}
+{"zaman_s": 1, "gecikme_ms": 44.1, "bolge": "tr-1", "durum": "ok"}
+{"zaman_s": 2, "gecikme_ms": 41.8, "bolge": "tr-1", "durum": "hata"}
+{"zaman_s": 3, "gecikme_ms": 58.3, "bolge": "tr-1", "durum": "ok"}
+{"zaman_s": 4, "gecikme_ms": 63.7, "bolge": "eu-1", "durum": "ok"}
+{"zaman_s": 5, "gecikme_ms": 61.2, "bolge": "eu-1", "durum": "hata"}
