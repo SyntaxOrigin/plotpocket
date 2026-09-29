@@ -1,0 +1,30 @@
+[package]
+name = "plotpocket"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+license = "MIT"
+description = "Buyuk CSV/TSV/JSONL dosyalarindan LTTB indirgemeyle hizli terminal ve SVG grafigi ureten arac."
+repository = "https://github.com/SyntaxOrigin/plotpocket"
+readme = "README.md"
+keywords = ["csv", "lttb", "svg", "plot", "terminal"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+# serde: src/ayristirici.rs icindeki JSONL koku tespiti ve src/sablon.rs icindeki
+# sablon tanimlarinin turetilmis veri yapisinda kullanilmasi icin gerekli.
+serde = { version = "1", features = ["derive"] }
+# serde_json: JSONL satirlarinin ayristirilmasi (src/ayristirici.rs) ve `plotpocket
+# profile --json` ciktisinin uretilmesi (src/profil.rs) icin ayristirici/serilestirici.
+serde_json = "1"
+# clap: src/main.rs icindeki `plot`, `profile`, `export`, `watch`, `templates` alt
+# komutlarinin ve seceneklerinin cozumlenmesi icin arguman ayristirici
+# (bkz. WORKER_CONTRACT.md 3.2-B).
+clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "debuginfo"
